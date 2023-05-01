@@ -18,7 +18,7 @@ export function ModalPledge(props: {
         handleClick: any, 
         handleContinue: any
     }) {
-    const [pledgeAmount, setPledgeAmount] = useState(0);
+    const [_pledgeAmount, setPledgeAmount] = useState(0);
     const pledgeActive =  props.pledge.pledgesLeft != 0;
     const pledgeHasLimit = props.pledge.pledgesLeft !== undefined;
 

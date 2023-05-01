@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import './assets/styles/App.css';
 import { AboutProjectSection } from './components/AboutProject';
-import { Button } from './components/Button';
 import { FundraiseSection } from './components/FundraiseSection';
 import { HeaderSection } from './components/HeaderSection';
 import { Modal } from './components/Modal';
