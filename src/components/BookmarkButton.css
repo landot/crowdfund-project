@@ -1,0 +1,31 @@
+.bookmark-container {
+    position: relative;
+}
+
+.bookmark-container:hover, .bookmark:hover {
+    cursor: pointer;
+}
+
+.bookmark {
+    color: #7A7A7A;
+    background: rgb(47, 47, 47, .05);
+    mix-blend-mode: normal;
+    border-radius: 33.5px;
+    border: none;
+    border-radius: 33.5px;
+    padding: 15px 25px 15px 60px;
+    font-weight: 700;
+    font-size: 14px;
+    max-height: 50px;
+}
+
+.bookmarked .bookmark {
+    color: #147A73;
+}
+
+.bookmark-icon {
+    position: absolute;
+    left: 0px;
+    width: 47px;
+    height: 47px;
+}

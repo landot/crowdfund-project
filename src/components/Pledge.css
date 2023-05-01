@@ -1,0 +1,26 @@
+.pledge-container {
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+    padding: 30px;
+}
+
+.pledge-container.out-of-stock {
+    mix-blend-mode: normal;
+    opacity: 0.5;
+}
+
+.pledge-header, .pledge-bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pledge-left-text {
+    display: flex;
+    align-items: center;
+}
+
+.pledge-left-text > h2 {
+    padding-right: 5px;
+}

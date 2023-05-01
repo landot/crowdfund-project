@@ -1,0 +1,47 @@
+.overlay {
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    z-index: 5;
+}
+
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: White;
+    padding: 48px;
+    border-radius: 8px;
+    max-width: 750px;
+    min-width: 300px;
+    max-height: 900px;
+    overflow: auto;
+    z-index: 10;
+    margin: 0;
+}
+
+.close-modal {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+}
+
+/* hide scrollbar in modal but still allow scrolling */
+.modal::-webkit-scrollbar {
+    display: none;
+}
+
+
+.overlay {
+    mix-blend-mode: normal;
+    background: rgb(0, 0, 0, 50%);
+}
+
+.modal .modal-pledge {
+    margin: 25px 0 25px 0;
+}

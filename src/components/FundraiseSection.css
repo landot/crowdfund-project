@@ -1,0 +1,13 @@
+.fundraise-numbers {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.fundraise-numbers hr {
+    background: #000000;
+    mix-blend-mode: normal;
+    opacity: 0.15;
+    width: 1px;
+    height: 63px;
+}

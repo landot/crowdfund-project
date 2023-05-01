@@ -1,0 +1,86 @@
+.modal-pledge {
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+    padding: 30px 30px 0px 70px;
+}
+
+.modal-pledge-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.modal-pledge-header h2 {
+    font-size: 18px;
+}
+
+.modal-pledge-header-left {
+    display: flex;
+    flex-direction: row;
+}
+
+.modal-pledge-header-left > p {
+    padding: 0 10px 0 0
+}
+
+.modal-radio {
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    left: -45px;
+    top: 15px;
+}
+
+hr {
+    margin: 0 -30px 0 -70px;
+    opacity: 0.15;
+ }
+
+ .set-pledge-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+ }
+
+
+.pledge-input-section {
+    position: relative;
+}
+
+ .pledge-input {
+    width: 100px;
+    height: 50px;
+    border: 1px solid #3CB3AB;
+    border-radius: 33.5px;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+ }
+
+ .pledge-currency-symbol {
+    position: absolute;
+    top: 5px;
+    left: 15px;
+    font-weight: 700;
+    font-size: 14px;
+    opacity: 50%;
+ }
+
+ .set-pledge-section-right {
+    display: flex;
+ }
+
+ .set-pledge-section button {
+    margin-left: 15px;
+ }
+
+ .modal-pledge.out-of-stock {
+    mix-blend-mode: normal;
+    opacity: 0.5;
+}
+
+.modal-pledge-description {
+    position: relative;
+}

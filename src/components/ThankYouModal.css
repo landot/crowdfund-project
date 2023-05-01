@@ -1,0 +1,35 @@
+.overlay {
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    z-index: 5;
+}
+
+.thank-you-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: White;
+    padding: 48px;
+    border-radius: 8px;
+    max-width: 750px;
+    min-width: 300px;
+    max-height: 900px;
+    overflow: auto;
+    z-index: 10;
+    margin: 0;
+}
+
+.thank-you-container img {
+    width: 90px;
+    height: 90px;
+}
