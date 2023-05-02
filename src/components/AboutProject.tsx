@@ -1,7 +1,7 @@
 import { Text, PledgeHeader } from "./Pledge";
 import { Pledge } from "./Pledge";
 import './AboutProject.css';
-import { pledges } from "./Modal";
+import { pledges } from "../assets/data/pledgeData";
 
 export function AboutProjectSection(props: {handleModalToggle: any}) {
     return (

@@ -29,3 +29,13 @@
     width: 47px;
     height: 47px;
 }
+
+@media (max-width: 600px) {
+    .bookmark {
+        display: none;
+    }
+
+    .bookmark-icon {
+        position: relative;
+    }
+  }

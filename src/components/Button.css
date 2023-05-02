@@ -1,4 +1,7 @@
 .button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
   border: none;
   padding: 15px 30px 15px 30px;
   border-radius: 33.5px;

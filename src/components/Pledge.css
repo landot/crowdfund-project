@@ -16,11 +16,18 @@
     align-items: center;
 }
 
-.pledge-left-text {
+.pledge-container .pledges-left-text {
     display: flex;
     align-items: center;
 }
 
-.pledge-left-text > h2 {
+.pledge-container .pledges-left-text > h2 {
     padding-right: 5px;
 }
+
+@media (max-width: 600px) {
+    .pledge-bottom {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+  }

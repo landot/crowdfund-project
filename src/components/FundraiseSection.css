@@ -11,3 +11,20 @@
     width: 1px;
     height: 63px;
 }
+
+
+@media (max-width: 600px) {
+    .fundraise-numbers {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .fundraise-numbers hr {
+        background: #000000;
+        mix-blend-mode: normal;
+        opacity: 0.15;
+        width: 80px;
+        height: 1px;
+    }
+  }

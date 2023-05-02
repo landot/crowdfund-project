@@ -1,9 +1,9 @@
-import { IPledge } from "./Pledge";
 import styled from 'styled-components';
 import { Text, PledgeMessage, PledgeLeftHeader } from "./Pledge";
 import './ModalPledge.css';
 import { useState } from "react";
 import { Button } from "./Button";
+import { IPledge } from '../assets/data/pledgeData';
 
 export const EnterPledgeInput = styled.input`
     font-weight: 700;
@@ -54,7 +54,7 @@ export function ModalPledge(props: {
                         {pledgeHasLimit && <PledgeMessage>Pledge ${props.pledge.minimumCost} or more</PledgeMessage>}
                     </div>
                     {pledgeHasLimit && 
-                        <div className='pledge-left-text'>
+                        <div className='pledges-left-text top'>
                             <PledgeLeftHeader>{props.pledge.pledgesLeft}</PledgeLeftHeader>
                             <Text>left</Text>
                         </div>
@@ -62,6 +62,12 @@ export function ModalPledge(props: {
 
                 </div>
                 <Text>{props.pledge.description}</Text>
+                {pledgeHasLimit && 
+                    <div className='pledges-left-text bottom'>
+                        <PledgeLeftHeader>{props.pledge.pledgesLeft}</PledgeLeftHeader>
+                        <Text>left</Text>
+                    </div>
+                }
             </div>
             {props.isSelected && pledgeActive &&
             <div>

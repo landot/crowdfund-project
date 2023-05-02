@@ -1,14 +1,7 @@
 import { Button } from './Button';
 import styled from 'styled-components';
 import './Pledge.css';
-
-export interface IPledge {
-    name: string;
-    minimumCost: number;
-    pledgesLeft?: number;
-    description: string;
-
-}
+import { IPledge } from '../assets/data/pledgeData';
 
 export const PledgeHeader = styled.h2`
     font-weight: 700;
@@ -47,7 +40,7 @@ export function Pledge(props: {pledge: IPledge, toggleModal: any}) {
             </div>
             <Text>{props.pledge.description}</Text>
             <div className='pledge-bottom'>
-                <div className='pledge-left-text'>
+                <div className='pledges-left-text'>
                     <PledgeLeftHeader>{props.pledge.pledgesLeft}</PledgeLeftHeader>
                     <Text>left</Text>
                 </div>

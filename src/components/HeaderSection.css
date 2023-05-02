@@ -27,3 +27,15 @@
     display: flex;
     justify-content: space-between;
 }
+
+@media (max-width: 600px) {
+    .header-actions {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .header-description h2 {
+        font-size: 20px;
+        text-align: center;
+    }
+}

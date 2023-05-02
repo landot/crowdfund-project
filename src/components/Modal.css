@@ -18,11 +18,10 @@
     padding: 48px;
     border-radius: 8px;
     max-width: 750px;
-    min-width: 300px;
     max-height: 900px;
+    height: 70%;
     overflow: auto;
     z-index: 10;
-    margin: 0;
 }
 
 .close-modal {
@@ -45,3 +44,17 @@
 .modal .modal-pledge {
     margin: 25px 0 25px 0;
 }
+
+
+@media (max-width: 600px) {
+    .modal {
+        width: 70%;
+        height: 70%;
+        margin: 24px;
+        padding: 24px;
+
+        top: 50%;
+        left: 50%;
+        transform: translate(-56%, -50%);
+    }
+  }

@@ -11,8 +11,14 @@
     align-items: center;
 }
 
-.modal-pledge-header h2 {
+.modal-pledge .pledges-left-text {
+    display: flex;
+    align-items: center;
+}
+
+.modal-pledge .pledges-left-text h2 {
     font-size: 18px;
+    padding-right: 5px;
 }
 
 .modal-pledge-header-left {
@@ -37,7 +43,7 @@
     cursor: default;
 }
 
-hr {
+.modal-pledge hr {
     margin: 0 -30px 0 -70px;
     opacity: 0.15;
  }
@@ -100,3 +106,38 @@ hr {
     color: red;
     margin-top: 0px;
 }
+
+.pledges-left-text.top {
+    display: flex;
+}
+
+.pledges-left-text.bottom {
+    display: none;
+}
+
+@media (max-width: 750px) {
+    .modal-pledge-header-left {
+        flex-direction: column;
+    }
+
+    .pledges-left-text.top {
+        display: none;
+    }
+
+    .pledges-left-text.bottom {
+        display: flex;
+    }
+    
+    .set-pledge-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 40px;
+        height: 150px;
+    }
+
+    .pledge-validation-error {
+        margin-top: 30px;
+    }
+  }

@@ -1,6 +1,6 @@
 html * {
-    font-family: Commissioner, sans-serif;
-  }
+  font-family: Commissioner, sans-serif;
+}
 
 body {
   background: url('../images/image-hero-desktop.jpg') no-repeat;     
@@ -19,7 +19,7 @@ body {
 .content-section {
   background-color: white;
   max-width: 750px;
-  min-width: 330px;
+  min-width: 200px;
   width: 50%;
   border-radius: 8px;
   padding: 48px;
@@ -36,4 +36,12 @@ input::-webkit-inner-spin-button {
 /* Firefox */
 input[type=number] {
   -moz-appearance: textfield;
+}
+
+@media (max-width: 600px) {
+  body {
+    background: url('../images/image-hero-mobile.jpg') no-repeat;    
+    background-size: contain;
+    background-color: #F2F2F2;
+  }
 }
