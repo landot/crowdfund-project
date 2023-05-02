@@ -5,6 +5,7 @@ html * {
 body {
   background: url('../images/image-hero-desktop.jpg') no-repeat;     
   background-size: contain;
+  background-color: #F2F2F2;
 }
 
 .content {
