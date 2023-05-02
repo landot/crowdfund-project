@@ -1,0 +1,84 @@
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px 120px 50px 120px;
+}
+
+.crowdfund-logo {
+    width: 128px;
+    height: 20px;
+}
+
+.navbar-hamburger {
+    display: none;
+}
+
+.navbar-links {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navbar-links nav {
+    margin: 0 15px 0 15px;
+    color: white;
+    font-weight: 500;
+    font-size: 13px;
+
+}
+
+.navbar-links nav:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+@media (max-width: 600px) {
+    .navbar {
+        position: relative;
+        margin: 24px 30px 24px 30px;
+    }
+
+    .navbar-hamburger {
+        display: block;
+        cursor: pointer;
+    }
+
+    .navbar-links {
+        flex-direction: column;
+        position: absolute;
+        top: 50px;
+        right: 0px;
+        width: 80%;
+        background-color: #FFFFFF;
+        border: 1px solid rgba(0, 0, 0, 0.0497193);
+        border-radius: 8px;
+        padding: 24px;
+    }
+
+    .navbar-links nav {
+        color: #000000;
+        font-weight: 500;
+        font-size: 18px;
+    }
+
+    .navbar-links nav:hover {
+        text-decoration: underline;
+    }
+
+    .navbar-links.show-dropdown {
+        display: block;
+    }
+
+    .navbar-links.hide-dropdown {
+        display: none;
+    }
+
+    hr {
+        background: #2F2F2F;
+        mix-blend-mode: normal;
+        opacity: 0.1;
+        margin: 24px -24px;
+      }
+  }

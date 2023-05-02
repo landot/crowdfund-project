@@ -2,6 +2,7 @@ import { useState } from 'react';
 import './assets/styles/App.css';
 import { AboutProjectSection } from './components/AboutProject';
 import { FundraiseSection } from './components/FundraiseSection';
+import { Header } from './components/Header';
 import { HeaderSection } from './components/HeaderSection';
 import { Modal } from './components/Modal';
 import { ThankYouModal } from './components/ThankYouModal';
@@ -18,7 +19,7 @@ function App() {
     setShowThankYou(prev => !prev);
   }
   /*
-  Header (large screen) - left logo, 3 links on right (links underline when hovered)
+  DONE: Header (large screen) - left logo, 3 links on right (links underline when hovered)
   Header (small screen) - left logo, hamburger button containing 3 links on right when clicked
   Minimum pledge validation in modal
   Allow pre-selecting of modal items when select reward is clicked
@@ -37,6 +38,7 @@ function App() {
 
   return (
     <div className='app'>
+      <Header />
       <div className='content'>
         <HeaderSection handleOpenModal={handleModalToggle}/>
         <FundraiseSection />
