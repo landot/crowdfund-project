@@ -18,12 +18,21 @@ export function ModalPledge(props: {
         handleClick: any, 
         handleContinue: any
     }) {
-    const [_pledgeAmount, setPledgeAmount] = useState(0);
+    const [pledgeAmount, setPledgeAmount] = useState(0);
+    const [showError, setShowError] = useState(false);
     const pledgeActive =  props.pledge.pledgesLeft != 0;
     const pledgeHasLimit = props.pledge.pledgesLeft !== undefined;
 
     function handlePledgeUpdate(e:  React.ChangeEvent<HTMLInputElement>) {
         setPledgeAmount(Math.round(parseFloat(e.target.value) * 100) / 100);
+    }
+
+    function handleContinueClick() {
+        const pledgeIsInvalid = pledgeAmount < props.pledge.minimumCost || pledgeAmount === 0;
+        setShowError(pledgeIsInvalid);
+        if(!pledgeIsInvalid) {
+            props.handleContinue();
+        }
     }
 
 
@@ -65,10 +74,13 @@ export function ModalPledge(props: {
                             color='#FFFFFF'
                             label='Continue'
                             backgroundColor='#147A73'
-                            onClick={props.handleContinue}
+                            onClick={handleContinueClick}
                         />
                     </div>
                 </div>
+                {showError &&
+                    <p className="pledge-validation-error">entered value is lower than minimum pledge amount</p>
+                }
             </div>
             }
         </div>

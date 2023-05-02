@@ -30,6 +30,7 @@
     position: absolute;
     left: -45px;
     top: 15px;
+    cursor: pointer;
 }
 
 hr {
@@ -83,4 +84,10 @@ hr {
 
 .modal-pledge-description {
     position: relative;
+    cursor: pointer;
+}
+
+.pledge-validation-error {
+    color: red;
+    margin-top: 0px;
 }
