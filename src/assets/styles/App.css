@@ -3,9 +3,8 @@ html * {
   }
 
 body {
-  background: url('../images/image-hero-desktop.jpg');
-  background-repeat: no-repeat;
-  background-color: #F2F2F2;
+  background: url('../images/image-hero-desktop.jpg') no-repeat;     
+  background-size: contain;
 }
 
 .content {

@@ -23,7 +23,7 @@ function App() {
   DONE: Header (small screen) - left logo, hamburger button containing 3 links on right when clicked
   DONE: Minimum pledge validation in modal
   DONE: Disable radio for out of stock pledges
-  Run Accessibility scanner on project
+  DONE: Run Accessibility scanner on project
   Allow tab-based navigation
   Stop body scrolling when modal is open
   Mobile Friendly:
