@@ -33,6 +33,10 @@
     cursor: pointer;
 }
 
+.modal-radio:disabled {
+    cursor: default;
+}
+
 hr {
     margin: 0 -30px 0 -70px;
     opacity: 0.15;
@@ -80,11 +84,16 @@ hr {
  .modal-pledge.out-of-stock {
     mix-blend-mode: normal;
     opacity: 0.5;
+    cursor: default;
 }
 
 .modal-pledge-description {
     position: relative;
     cursor: pointer;
+}
+
+.out-of-stock .modal-pledge-description {
+    cursor: default;
 }
 
 .pledge-validation-error {

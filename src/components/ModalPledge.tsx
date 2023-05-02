@@ -44,6 +44,7 @@ export function ModalPledge(props: {
                     className="modal-radio" 
                     onClick={props.handleClick}
                     checked={pledgeActive ? props.isSelected: false}
+                    disabled={!pledgeActive}
                 />
                 <div className='modal-pledge-header'>
                     <div className='modal-pledge-header-left'>
