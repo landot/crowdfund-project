@@ -22,7 +22,6 @@ function App() {
   DONE: Header (large screen) - left logo, 3 links on right (links underline when hovered)
   DONE: Header (small screen) - left logo, hamburger button containing 3 links on right when clicked
   DONE: Minimum pledge validation in modal
-  Allow pre-selecting of modal items when select reward is clicked
   DONE: Disable radio for out of stock pledges
   Run Accessibility scanner on project
   Allow tab-based navigation
@@ -35,6 +34,7 @@ function App() {
     - modal
     - thank you modal
   Fix bad types in code (mostly the action functions)
+  Allow pre-selecting of modal items when select reward is clicked
   */
 
   return (
