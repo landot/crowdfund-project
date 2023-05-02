@@ -41,10 +41,12 @@ export function ModalPledge(props: {
             <div className="modal-pledge-description" onClick={() => props.handleClick(props.index)}>
                 <input 
                     type="radio" 
+                    name={props.pledge.name}
                     className="modal-radio" 
                     onClick={props.handleClick}
                     checked={pledgeActive ? props.isSelected: false}
                     disabled={!pledgeActive}
+                    aria-label={`click to ${props.isSelected ? 'de-select' : 'select'} ${props.pledge.name}`}
                 />
                 <div className='modal-pledge-header'>
                     <div className='modal-pledge-header-left'>
