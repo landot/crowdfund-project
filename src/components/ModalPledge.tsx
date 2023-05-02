@@ -1,22 +1,15 @@
-import styled from 'styled-components';
-import { Text, PledgeMessage, PledgeLeftHeader } from "./Pledge";
 import './ModalPledge.css';
 import { useState } from "react";
 import { Button } from "./Button";
 import { IPledge } from '../assets/data/pledgeData';
-
-export const EnterPledgeInput = styled.input`
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 22px;
-`
+import { PledgeMessage, PledgeLeftHeader, Text } from '../assets/styles/StyledComponents';
 
 export function ModalPledge(props: {
         pledge: IPledge, 
         isSelected: boolean, 
         index: number, 
-        handleClick: any, 
-        handleContinue: any
+        handleClick: (index: number) => void, 
+        handleContinue: () => void
     }) {
     const [pledgeAmount, setPledgeAmount] = useState(0);
     const [showError, setShowError] = useState(false);
@@ -43,7 +36,6 @@ export function ModalPledge(props: {
                     type="radio" 
                     name={props.pledge.name}
                     className="modal-radio" 
-                    onClick={props.handleClick}
                     checked={pledgeActive ? props.isSelected: false}
                     disabled={!pledgeActive}
                     aria-label={`click to ${props.isSelected ? 'de-select' : 'select'} ${props.pledge.name}`}

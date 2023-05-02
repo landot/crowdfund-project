@@ -1,11 +1,11 @@
-import { Text, PledgeHeader } from "./Pledge";
 import { ModalPledge } from "./ModalPledge";
 import closeModalIcon from '../assets/images/icon-close-modal.svg';
 import { useState } from "react";
 import './Modal.css';
 import { pledges } from "../assets/data/pledgeData";
+import { PledgeHeader, Text } from "../assets/styles/StyledComponents";
 
-export function Modal(props: {closeModal: any, openThankYou: any}) {
+export function Modal(props: {closeModal: () => void, openThankYou: () => void}) {
     const [selectedPledge, setSelectedPledge] = useState<number>();
 
     function handlePledgeClick(index: number) {

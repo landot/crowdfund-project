@@ -1,10 +1,10 @@
 import { BookmarkButton } from "./BookmarkButton";
 import { Button } from "./Button";
-import { Text, PledgeHeader } from "./Pledge";
 import './HeaderSection.css';
 import logo from '../assets/images/logo-mastercraft.svg';
+import { PledgeHeader, Text } from "../assets/styles/StyledComponents";
 
-export function HeaderSection(props: {handleOpenModal: any}) {
+export function HeaderSection(props: {handleOpenModal: () => void;}) {
     return (
         <div className='content-header content-section'>
             <img className='logo' src={logo} alt="logo" />

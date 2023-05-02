@@ -1,9 +1,9 @@
 import { Button } from "./Button";
-import { PledgeHeader, Text } from "./Pledge";
 import checkIcon from '../assets/images/icon-check.svg';
 import './ThankYouModal.css';
+import { Text, PledgeHeader } from "../assets/styles/StyledComponents";
 
-export function ThankYouModal(props: {exitThankYou: any}) {
+export function ThankYouModal(props: {exitThankYou: () => void;}) {
     return (
         <div>
             <div className='overlay' onClick={props.exitThankYou}/>

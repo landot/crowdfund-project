@@ -1,9 +1,9 @@
-import { Text, PledgeHeader } from "./Pledge";
 import { Pledge } from "./Pledge";
 import './AboutProject.css';
 import { pledges } from "../assets/data/pledgeData";
+import { PledgeHeader, Text } from "../assets/styles/StyledComponents";
 
-export function AboutProjectSection(props: {handleModalToggle: any}) {
+export function AboutProjectSection(props: {handleModalToggle: () => void;}) {
     return (
         <div className='about-project-section content-section'>
             <PledgeHeader>About this project</PledgeHeader>

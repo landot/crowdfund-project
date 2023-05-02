@@ -18,10 +18,6 @@ function App() {
   function handleThankYouToggle() {
     setShowThankYou(prev => !prev);
   }
-  /*
-  Fix bad types in code (mostly the action functions)
-  move styled components to file
-  */
 
   return (
     <div className={'app'}>

@@ -1,6 +1,6 @@
-import { Text } from "./Pledge";
-import './FundraiseSection.css';
+import { Text } from '../assets/styles/StyledComponents';
 import { GoalBar } from "./GoalBar";
+import './FundraiseSection.css';
 
 export function FundraiseSection() {
     return (
